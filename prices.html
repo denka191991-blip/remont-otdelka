@@ -1,0 +1,53 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Как формируется цена</title><style>@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+#remont-preview{background:#faf5ed;color:#312821;font:15px/1.55 system-ui,sans-serif;overflow:hidden}#remont-preview *{box-sizing:border-box}#remont-preview header,#remont-preview section{padding:clamp(20px,4vw,42px)}#remont-preview header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-block:18px;border-bottom:1px solid #e5d8c8}#remont-preview nav,#remont-preview .actions{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}#remont-preview a{color:inherit}#remont-preview h1,#remont-preview h2{font-family:Georgia,serif;font-weight:400;line-height:1.08;margin:0 0 16px}#remont-preview h1{font-size:clamp(33px,5vw,58px)}#remont-preview h2{font-size:clamp(25px,4vw,40px)}#remont-preview p{margin:0 0 18px}#remont-preview .hero{display:grid;grid-template-columns:1fr 1.05fr;gap:28px;align-items:center}#remont-preview figure{margin:0}#remont-preview img{display:block;width:100%;aspect-ratio:1.24;object-fit:cover;border-radius:5px}#remont-preview figcaption{font-size:12px;margin-top:5px}#remont-preview .primary{display:inline-block;background:#8f3d2b;color:#fff;padding:10px 16px;border:0;border-radius:4px;text-decoration:none;font:inherit}#remont-preview .services{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}#remont-preview details{background:#eee2d4;padding:14px}#remont-preview details p{margin:12px 0 0}#remont-preview summary{font-weight:600}#remont-preview .band{background:#eee2d4}#remont-preview form{display:grid;gap:12px;max-width:540px}#remont-preview label{display:grid;gap:4px}#remont-preview input,#remont-preview select,#remont-preview textarea{width:100%;min-width:0;font:inherit;padding:8px;border:1px solid #a99687;border-radius:4px;background:#fffaf4;color:#312821}#remont-preview button{justify-self:start}#remont-preview [hidden]{display:none}@media(max-width:650px){#remont-preview .hero,#remont-preview .services{grid-template-columns:1fr}}
+#remont-preview .hero{position:relative;isolation:isolate;display:flex;align-items:flex-end;min-height:475px;color:#fffaf4;background:#30231d}
+#remont-preview .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(27,19,14,.9),rgba(27,19,14,.75) 32%,rgba(27,19,14,.32) 65%,transparent),linear-gradient(0deg,rgba(27,19,14,.46),transparent 42%);pointer-events:none}
+#remont-preview .hero>div{max-width:530px;padding-bottom:15px}
+#remont-preview .hero figure{position:absolute;inset:0;z-index:-2}
+#remont-preview .hero img{width:100%;height:100%;aspect-ratio:auto;object-position:center 38%;border-radius:0}
+#remont-preview .hero figcaption{position:absolute;z-index:1;right:12px;bottom:8px;margin:0;padding:2px 6px;color:#fffaf4;background:#30231d}
+#remont-preview .hero .primary{background:#a44732}
+@media(max-width:650px){#remont-preview .hero{min-height:420px}#remont-preview .hero::after{background:linear-gradient(0deg,rgba(27,19,14,.96),rgba(27,19,14,.76) 35%,rgba(27,19,14,.23) 75%,transparent)}#remont-preview .hero img{object-position:55% center}#remont-preview .hero>div{padding-bottom:21px}}
+#remont-preview{font-family:Manrope,system-ui,sans-serif}
+#remont-preview h1,#remont-preview h2{font-family:inherit;font-weight:800;letter-spacing:-.055em}
+#remont-preview h1{font-size:clamp(34px,5.4vw,62px)}
+#remont-preview h2{font-size:clamp(28px,4.2vw,46px)}
+#remont-preview .hero>div{max-width:580px}
+#remont-preview .choices{padding-block:clamp(32px,6vw,62px)}
+#remont-preview .services{gap:0;border-top:1px solid #d4c1af}
+#remont-preview details{background:none;padding:17px 14px 20px 0;border-bottom:1px solid #d4c1af}
+#remont-preview details+details{padding-left:14px;border-left:1px solid #d4c1af}
+#remont-preview summary{font-size:clamp(16px,2.1vw,21px);font-weight:800}
+#remont-preview details small{display:block;color:#684a3e;margin:8px 0 0}
+#remont-preview .case-preview{display:grid;grid-template-columns:1.2fr 1fr;gap:25px;align-items:center;background:#e9d7c6}
+#remont-preview .case-photo{min-height:265px;background-position:center 24%;background-size:cover;border-radius:5px}
+#remont-preview .case-preview small{display:block;margin-bottom:10px;color:#633f33}
+#remont-preview .case-preview dl{margin:0}
+#remont-preview .case-preview dl div{display:grid;grid-template-columns:100px 1fr;gap:8px;padding:8px 0;border-top:1px solid #c9ac98}
+#remont-preview dt{font-weight:800}
+#remont-preview dd{margin:0}
+#remont-preview .price-list{display:flex;flex-wrap:wrap;gap:8px 24px;padding-left:20px;margin:0}
+@media(max-width:650px){#remont-preview details+details{padding-left:0;border-left:0}#remont-preview .case-preview{grid-template-columns:1fr}#remont-preview .case-photo{min-height:190px}}
+#remont-preview{--paper:#faf4e9;--ink:#322820;--clay:#883e2e;background:var(--paper);color:var(--ink)}
+#remont-preview header{border:0}
+#remont-preview .hero{min-height:clamp(410px,54vw,570px);border-radius:0 0 38px 0;overflow:hidden;align-items:center}
+#remont-preview .hero>div{max-width:710px;padding:0}
+#remont-preview .hero h1{font-weight:800;letter-spacing:-.055em;max-width:680px}
+#remont-preview .hero h1 em{display:block;font:italic 400 1.05em/1.04 Georgia,serif;letter-spacing:-.055em;color:#f3cdb1}
+#remont-preview .hero .primary{background:#f6d7bd;color:#39251f;font-weight:800}
+#remont-preview .hero .actions a+a{font-weight:700;text-underline-offset:5px}
+#remont-preview .choices>p{max-width:520px}
+#remont-preview .choice-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:16px}
+#remont-preview .choice{background:#fffaf2;border:1px solid #e0cdbb;border-radius:5px 5px 20px 5px;overflow:hidden}
+#remont-preview .choice-media{min-height:210px;position:relative;background:#e4c5ad center 23%/cover}
+#remont-preview .swatches{display:grid;grid-template-columns:repeat(3,1fr);padding:25px 13%;gap:9px;align-items:center;background:#eadbcb}
+#remont-preview .swatches span{height:124px;border-radius:80px 80px 5px 5px;box-shadow:0 8px 17px #452b242b;background:#f2e6d1}
+#remont-preview .swatches span:nth-child(2){background:repeating-linear-gradient(96deg,#ac7f58 0 3px,#be936d 4px 12px)}
+#remont-preview .swatches span:nth-child(3){background:#a85542}
+#remont-preview .choice-content{padding:20px}
+#remont-preview .choice-content h3{font-size:clamp(21px,3vw,29px);letter-spacing:-.035em;margin:0 0 8px}
+#remont-preview .choice-content p{margin-bottom:10px}
+#remont-preview .choice-content a{font-weight:800;color:var(--clay);display:inline-block;padding-block:6px;text-underline-offset:4px}
+#remont-preview .choice-content a+a{margin-left:12px}
+@media(max-width:650px){#remont-preview .choice-grid{grid-template-columns:1fr}#remont-preview .hero{align-items:flex-end;min-height:410px;border-bottom-right-radius:26px}#remont-preview .hero>div{padding-bottom:24px}#remont-preview .choice-media{min-height:160px}}
+</style><style>body{margin:0;background:#faf4e9}#remont-preview{max-width:1440px;margin:auto;font-size:16px}#remont-preview .brand{font-weight:800;text-decoration:none}#remont-preview footer{padding:25px clamp(20px,4vw,42px);display:flex;gap:18px;flex-wrap:wrap;border-top:1px solid #e0cdbb}#remont-preview .detail{max-width:930px;margin:auto;min-height:440px}#remont-preview .detail p{max-width:68ch}#remont-preview .service-links{margin-top:18px;display:flex;flex-wrap:wrap;gap:16px}#remont-preview .service-links a{font-weight:700}#remont-preview .demo-note{font-size:14px;margin:0}</style><link rel="stylesheet" href="./site-navigation.css"><script src="./site-current-navigation.js" defer></script></head><body><div id="remont-preview"><header class="site-header"><a class="brand" href="./">Локальный ремонт и отделка</a><nav aria-label="Основная навигация"><a href="./ceilings.html#ceiling-catalog">Каталог</a><a href="./#remont-services">Услуги</a><a href="./portfolio.html">Работы</a><a href="./prices.html">Цены</a><a href="./about.html">О нас</a><a href="./contact.html">Контакты</a></nav></header><main><section class="detail"><h1>Как формируется цена</h1><p>Для предварительной оценки нужны размеры, описание задачи и состояние поверхности.</p><h2>Что входит в смету</h2><p>Перечень работ, объёмы, материалы и подготовка. Стоимость уточняется после согласования состава работ.</p><a class="primary" href="./ceilings.html#ceiling-calculator">Рассчитать потолок</a> <a href="./contact.html">Оценить задачу</a></section></main><footer><a href="./">Локальный ремонт и отделка</a><a href="./contact.html">Обсудить задачу</a></footer></div></body></html>

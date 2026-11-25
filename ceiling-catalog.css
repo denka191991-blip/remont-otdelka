@@ -1,0 +1,108 @@
+#remont-preview .ceiling-intro {
+  max-width: none;
+  min-height: 0;
+  padding-block: clamp(26px, 5vw, 62px);
+  background: #e9d7c6;
+}
+
+#remont-preview .ceiling-intro p {
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+}
+
+#remont-preview .ceiling-intro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+}
+
+#remont-preview .ceiling-intro-actions a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-weight: 700;
+  text-underline-offset: 4px;
+}
+
+#remont-preview .catalog-intro { max-width: 62ch; }
+
+#remont-preview .catalog-controls {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(160px, 235px) auto;
+  align-items: end;
+  gap: 10px 16px;
+  max-width: 800px;
+  margin-block: 24px 12px;
+}
+
+#remont-preview .catalog-controls label { font-weight: 700; min-width: 0; }
+#remont-preview .catalog-controls :is(input, select, button) { min-height: 44px; }
+#remont-preview .catalog-controls :is(input, select) { font-weight: 500; }
+
+#remont-preview .catalog-controls button {
+  font: inherit;
+  color: #733222;
+  font-weight: 800;
+  border: 1px solid #a99687;
+  border-radius: 4px;
+  background: #fffaf4;
+  cursor: pointer;
+  padding-inline: 14px;
+}
+
+#remont-preview .catalog-count { color: #614d3e; margin-block: 8px 12px; }
+#remont-preview .catalog-empty { margin-block: 18px; }
+
+#remont-preview .catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+#remont-preview .catalog-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #fffaf4;
+  border: 1px solid #e0cdbb;
+  border-radius: 6px 6px 20px 6px;
+}
+
+#remont-preview .catalog-swatch {
+  height: clamp(75px, 12vw, 138px);
+  border-bottom: 1px solid #e0cdbb;
+  box-shadow: inset 0 -14px 32px #382b1918;
+}
+
+#remont-preview .catalog-swatch--matte { background: linear-gradient(145deg,#f8f3e7,#e3d9c9); }
+#remont-preview .catalog-swatch--satin { background: linear-gradient(125deg,#c1aa97 8%,#e5ccba 28%,#fff1e0 43%,#e9d2be 58%,#b79c88 95%); }
+#remont-preview .catalog-swatch--fabric { background: repeating-linear-gradient(0deg,#65564022 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,#53432e2e 0 1px,#f1e4cd 1px 3px); }
+#remont-preview .catalog-swatch--drywall { background: linear-gradient(150deg,#d2beaf 0%,#f4e4d0 55%,#9e7553 56%,#74604e 60%,#c2a588 61%,#e4caae 100%); }
+#remont-preview .catalog-swatch--slat { background: repeating-linear-gradient(115deg,#c6c7bf 0 23px,#777a73 25px 27px,#3a403a 27px 31px,#eef0e7 32px 34px); }
+#remont-preview .catalog-swatch--tile { background: linear-gradient(90deg,#9a8b74 1px,transparent 2px),linear-gradient(#9a8b74 1px,transparent 2px),radial-gradient(#8a7c6329 15%,transparent 36%),#e9e3d1; background-size: 70px 45px,70px 45px,6px 5px,auto; }
+
+#remont-preview .catalog-card-body { display: flex; flex: 1; flex-direction: column; align-items: flex-start; padding: 16px; }
+#remont-preview .catalog-category { color: #733222; font-size: .875rem; font-weight: 800; }
+#remont-preview .catalog-card h3 { margin: 4px 0 8px; font-size: clamp(1.12rem, 2vw, 1.35rem); line-height: 1.18; }
+#remont-preview .catalog-card p { margin: 0 0 12px; }
+#remont-preview .catalog-rooms { color: #614d3e; }
+#remont-preview .catalog-card .catalog-rate { margin-top: auto; color: #733222; font-weight: 800; }
+#remont-preview .catalog-rate span { color: #614d3e; font-size: .875rem; font-weight: 500; }
+
+#remont-preview .catalog-action {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: 14px;
+  border: 1px solid #883e2e;
+  border-radius: 4px;
+  color: #733222;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+#remont-preview .catalog-action:hover { background: #f0ded0; }
+
+@media (max-width: 900px) { #remont-preview .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 650px) { #remont-preview .catalog-controls { grid-template-columns: minmax(0, 1fr) auto; } #remont-preview .catalog-controls label:first-child { grid-column: 1 / -1; } }
+@media (max-width: 520px) { #remont-preview .catalog-grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,246 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Потолки и освещение</title><style>@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+#remont-preview{background:#faf5ed;color:#312821;font:15px/1.55 system-ui,sans-serif;overflow:hidden}#remont-preview *{box-sizing:border-box}#remont-preview header,#remont-preview section{padding:clamp(20px,4vw,42px)}#remont-preview header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-block:18px;border-bottom:1px solid #e5d8c8}#remont-preview nav,#remont-preview .actions{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center}#remont-preview a{color:inherit}#remont-preview h1,#remont-preview h2{font-family:Georgia,serif;font-weight:400;line-height:1.08;margin:0 0 16px}#remont-preview h1{font-size:clamp(33px,5vw,58px)}#remont-preview h2{font-size:clamp(25px,4vw,40px)}#remont-preview p{margin:0 0 18px}#remont-preview .hero{display:grid;grid-template-columns:1fr 1.05fr;gap:28px;align-items:center}#remont-preview figure{margin:0}#remont-preview img{display:block;width:100%;aspect-ratio:1.24;object-fit:cover;border-radius:5px}#remont-preview figcaption{font-size:12px;margin-top:5px}#remont-preview .primary{display:inline-block;background:#8f3d2b;color:#fff;padding:10px 16px;border:0;border-radius:4px;text-decoration:none;font:inherit}#remont-preview .services{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}#remont-preview details{background:#eee2d4;padding:14px}#remont-preview details p{margin:12px 0 0}#remont-preview summary{font-weight:600}#remont-preview .band{background:#eee2d4}#remont-preview form{display:grid;gap:12px;max-width:540px}#remont-preview label{display:grid;gap:4px}#remont-preview input,#remont-preview select,#remont-preview textarea{width:100%;min-width:0;font:inherit;padding:8px;border:1px solid #a99687;border-radius:4px;background:#fffaf4;color:#312821}#remont-preview button{justify-self:start}#remont-preview [hidden]{display:none}@media(max-width:650px){#remont-preview .hero,#remont-preview .services{grid-template-columns:1fr}}
+#remont-preview .hero{position:relative;isolation:isolate;display:flex;align-items:flex-end;min-height:475px;color:#fffaf4;background:#30231d}
+#remont-preview .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(27,19,14,.9),rgba(27,19,14,.75) 32%,rgba(27,19,14,.32) 65%,transparent),linear-gradient(0deg,rgba(27,19,14,.46),transparent 42%);pointer-events:none}
+#remont-preview .hero>div{max-width:530px;padding-bottom:15px}
+#remont-preview .hero figure{position:absolute;inset:0;z-index:-2}
+#remont-preview .hero img{width:100%;height:100%;aspect-ratio:auto;object-position:center 38%;border-radius:0}
+#remont-preview .hero figcaption{position:absolute;z-index:1;right:12px;bottom:8px;margin:0;padding:2px 6px;color:#fffaf4;background:#30231d}
+#remont-preview .hero .primary{background:#a44732}
+@media(max-width:650px){#remont-preview .hero{min-height:420px}#remont-preview .hero::after{background:linear-gradient(0deg,rgba(27,19,14,.96),rgba(27,19,14,.76) 35%,rgba(27,19,14,.23) 75%,transparent)}#remont-preview .hero img{object-position:55% center}#remont-preview .hero>div{padding-bottom:21px}}
+#remont-preview{font-family:Manrope,system-ui,sans-serif}
+#remont-preview h1,#remont-preview h2{font-family:inherit;font-weight:800;letter-spacing:-.055em}
+#remont-preview h1{font-size:clamp(34px,5.4vw,62px)}
+#remont-preview h2{font-size:clamp(28px,4.2vw,46px)}
+#remont-preview .hero>div{max-width:580px}
+#remont-preview .choices{padding-block:clamp(32px,6vw,62px)}
+#remont-preview .services{gap:0;border-top:1px solid #d4c1af}
+#remont-preview details{background:none;padding:17px 14px 20px 0;border-bottom:1px solid #d4c1af}
+#remont-preview details+details{padding-left:14px;border-left:1px solid #d4c1af}
+#remont-preview summary{font-size:clamp(16px,2.1vw,21px);font-weight:800}
+#remont-preview details small{display:block;color:#684a3e;margin:8px 0 0}
+#remont-preview .case-preview{display:grid;grid-template-columns:1.2fr 1fr;gap:25px;align-items:center;background:#e9d7c6}
+#remont-preview .case-photo{min-height:265px;background-position:center 24%;background-size:cover;border-radius:5px}
+#remont-preview .case-preview small{display:block;margin-bottom:10px;color:#633f33}
+#remont-preview .case-preview dl{margin:0}
+#remont-preview .case-preview dl div{display:grid;grid-template-columns:100px 1fr;gap:8px;padding:8px 0;border-top:1px solid #c9ac98}
+#remont-preview dt{font-weight:800}
+#remont-preview dd{margin:0}
+#remont-preview .price-list{display:flex;flex-wrap:wrap;gap:8px 24px;padding-left:20px;margin:0}
+@media(max-width:650px){#remont-preview details+details{padding-left:0;border-left:0}#remont-preview .case-preview{grid-template-columns:1fr}#remont-preview .case-photo{min-height:190px}}
+#remont-preview{--paper:#faf4e9;--ink:#322820;--clay:#883e2e;background:var(--paper);color:var(--ink)}
+#remont-preview header{border:0}
+#remont-preview .hero{min-height:clamp(410px,54vw,570px);border-radius:0 0 38px 0;overflow:hidden;align-items:center}
+#remont-preview .hero>div{max-width:710px;padding:0}
+#remont-preview .hero h1{font-weight:800;letter-spacing:-.055em;max-width:680px}
+#remont-preview .hero h1 em{display:block;font:italic 400 1.05em/1.04 Georgia,serif;letter-spacing:-.055em;color:#f3cdb1}
+#remont-preview .hero .primary{background:#f6d7bd;color:#39251f;font-weight:800}
+#remont-preview .hero .actions a+a{font-weight:700;text-underline-offset:5px}
+#remont-preview .choices>p{max-width:520px}
+#remont-preview .choice-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:16px}
+#remont-preview .choice{background:#fffaf2;border:1px solid #e0cdbb;border-radius:5px 5px 20px 5px;overflow:hidden}
+#remont-preview .choice-media{min-height:210px;position:relative;background:#e4c5ad center 23%/cover}
+#remont-preview .swatches{display:grid;grid-template-columns:repeat(3,1fr);padding:25px 13%;gap:9px;align-items:center;background:#eadbcb}
+#remont-preview .swatches span{height:124px;border-radius:80px 80px 5px 5px;box-shadow:0 8px 17px #452b242b;background:#f2e6d1}
+#remont-preview .swatches span:nth-child(2){background:repeating-linear-gradient(96deg,#ac7f58 0 3px,#be936d 4px 12px)}
+#remont-preview .swatches span:nth-child(3){background:#a85542}
+#remont-preview .choice-content{padding:20px}
+#remont-preview .choice-content h3{font-size:clamp(21px,3vw,29px);letter-spacing:-.035em;margin:0 0 8px}
+#remont-preview .choice-content p{margin-bottom:10px}
+#remont-preview .choice-content a{font-weight:800;color:var(--clay);display:inline-block;padding-block:6px;text-underline-offset:4px}
+#remont-preview .choice-content a+a{margin-left:12px}
+@media(max-width:650px){#remont-preview .choice-grid{grid-template-columns:1fr}#remont-preview .hero{align-items:flex-end;min-height:410px;border-bottom-right-radius:26px}#remont-preview .hero>div{padding-bottom:24px}#remont-preview .choice-media{min-height:160px}}
+</style><style>body{margin:0;background:#faf4e9}#remont-preview{max-width:1440px;margin:auto;font-size:16px}#remont-preview .brand{font-weight:800;text-decoration:none}#remont-preview footer{padding:25px clamp(20px,4vw,42px);display:flex;gap:18px;flex-wrap:wrap;border-top:1px solid #e0cdbb}#remont-preview .detail{max-width:930px;margin:auto;min-height:440px}#remont-preview .detail p{max-width:68ch}#remont-preview .service-links{margin-top:18px;display:flex;flex-wrap:wrap;gap:16px}#remont-preview .service-links a{font-weight:700}#remont-preview .demo-note{font-size:14px;margin:0}</style><link rel="stylesheet" href="./site-navigation.css"><link rel="stylesheet" href="./ceiling-catalog.css"><script src="./ceiling-catalog.js" defer></script><script src="./site-current-navigation.js" defer></script></head><body><div id="remont-preview"><header class="site-header"><a class="brand" href="./">Локальный ремонт и отделка</a><nav aria-label="Основная навигация"><a href="./ceilings.html#ceiling-catalog">Каталог</a><a href="./#remont-services">Услуги</a><a href="./portfolio.html">Работы</a><a href="./prices.html">Цены</a><a href="./about.html">О нас</a><a href="./contact.html">Контакты</a></nav></header><main>
+<section class="detail ceiling-intro">
+  <h1>Потолки и освещение</h1>
+  <p>Подберите потолок под комнату и посчитайте стоимость с учётом площади, светильников и дополнительных работ.</p>
+  <div class="ceiling-intro-actions">
+    <a class="primary" href="#ceiling-catalog">Смотреть каталог</a>
+    <a href="#ceiling-calculator">Открыть калькулятор</a>
+    <a href="./contact.html?service=%D0%9F%D0%BE%D1%82%D0%BE%D0%BB%D0%BA%D0%B8">Обсудить задачу</a>
+  </div>
+</section>
+<section class="ceiling-catalog" id="ceiling-catalog" aria-labelledby="catalog-title">
+  <h2 id="catalog-title">Каталог потолков</h2>
+  <p class="catalog-intro">Ориентировочная цена за м² включает покрытие и базовый монтаж. Профиль, освещение и другие работы добавляются в калькуляторе.</p>
+  <form class="catalog-controls" role="search" aria-label="Поиск по каталогу потолков" hidden>
+    <label for="catalog-query">Поиск по каталогу
+      <input id="catalog-query" type="search" placeholder="Например, спальня" autocomplete="off">
+    </label>
+    <label for="catalog-category">Тип конструкции
+      <select id="catalog-category"><option value="">Все типы</option><option value="stretch">Натяжные</option><option value="suspended">Подвесные</option></select>
+    </label>
+    <button type="reset">Сбросить</button>
+  </form>
+  <p class="catalog-count" role="status" hidden></p>
+  <p class="catalog-empty" hidden>Попробуйте изменить запрос или выбрать другой тип конструкции.</p>
+  <div class="catalog-grid">
+  <article class="catalog-card" data-category="stretch">
+    <div class="catalog-swatch catalog-swatch--matte" aria-hidden="true"></div>
+    <div class="catalog-card-body">
+      <span class="catalog-category">Натяжной</span>
+      <h3>Матовый натяжной</h3>
+      <p>Ровная поверхность без бликов. Подходит для спокойного рассеянного света.</p>
+      <p class="catalog-rooms"><strong>Куда подходит:</strong> Гостиная, спальня, прихожая</p>
+      <p class="catalog-rate">≈ 850 ₽/м²<span> · базовый монтаж</span></p>
+      <a class="catalog-action" href="?type=matte#ceiling-calculator" data-estimate-type="matte" aria-label="Рассчитать потолок: Матовый натяжной">Рассчитать</a>
+    </div>
+  </article>
+  <article class="catalog-card" data-category="stretch">
+    <div class="catalog-swatch catalog-swatch--satin" aria-hidden="true"></div>
+    <div class="catalog-card-body">
+      <span class="catalog-category">Натяжной</span>
+      <h3>Сатиновый натяжной</h3>
+      <p>Мягкий шелковистый блеск, который заметнее при боковом освещении.</p>
+      <p class="catalog-rooms"><strong>Куда подходит:</strong> Гостиная, спальня</p>
+      <p class="catalog-rate">≈ 1 000 ₽/м²<span> · базовый монтаж</span></p>
+      <a class="catalog-action" href="?type=satin#ceiling-calculator" data-estimate-type="satin" aria-label="Рассчитать потолок: Сатиновый натяжной">Рассчитать</a>
+    </div>
+  </article>
+  <article class="catalog-card" data-category="stretch">
+    <div class="catalog-swatch catalog-swatch--fabric" aria-hidden="true"></div>
+    <div class="catalog-card-body">
+      <span class="catalog-category">Натяжной</span>
+      <h3>Тканевый натяжной</h3>
+      <p>Тонкая фактура ткани и спокойная матовая поверхность.</p>
+      <p class="catalog-rooms"><strong>Куда подходит:</strong> Спальня, кабинет, гостиная</p>
+      <p class="catalog-rate">≈ 1 900 ₽/м²<span> · базовый монтаж</span></p>
+      <a class="catalog-action" href="?type=fabric#ceiling-calculator" data-estimate-type="fabric" aria-label="Рассчитать потолок: Тканевый натяжной">Рассчитать</a>
+    </div>
+  </article>
+  <article class="catalog-card" data-category="suspended">
+    <div class="catalog-swatch catalog-swatch--drywall" aria-hidden="true"></div>
+    <div class="catalog-card-body">
+      <span class="catalog-category">Подвесной</span>
+      <h3>Подвесной из гипсокартона</h3>
+      <p>Жёсткое основание для ниш, нескольких уровней и скрытой подсветки.</p>
+      <p class="catalog-rooms"><strong>Куда подходит:</strong> Гостиная, кухня, коридор</p>
+      <p class="catalog-rate">≈ 2 200 ₽/м²<span> · базовый монтаж</span></p>
+      <a class="catalog-action" href="?type=drywall#ceiling-calculator" data-estimate-type="drywall" aria-label="Рассчитать потолок: Подвесной из гипсокартона">Рассчитать</a>
+    </div>
+  </article>
+  <article class="catalog-card" data-category="suspended">
+    <div class="catalog-swatch catalog-swatch--slat" aria-hidden="true"></div>
+    <div class="catalog-card-body">
+      <span class="catalog-category">Подвесной</span>
+      <h3>Реечный алюминиевый</h3>
+      <p>Линейный рисунок из металлических реек. Поверхность легко протирать.</p>
+      <p class="catalog-rooms"><strong>Куда подходит:</strong> Ванная, санузел, кухня</p>
+      <p class="catalog-rate">≈ 1 550 ₽/м²<span> · базовый монтаж</span></p>
+      <a class="catalog-action" href="?type=slat#ceiling-calculator" data-estimate-type="slat" aria-label="Рассчитать потолок: Реечный алюминиевый">Рассчитать</a>
+    </div>
+  </article>
+  <article class="catalog-card" data-category="suspended">
+    <div class="catalog-swatch catalog-swatch--tile" aria-hidden="true"></div>
+    <div class="catalog-card-body">
+      <span class="catalog-category">Подвесной</span>
+      <h3>Кассетный с минеральными плитами</h3>
+      <p>Съёмные плиты помогают сохранить доступ к проводке и коммуникациям.</p>
+      <p class="catalog-rooms"><strong>Куда подходит:</strong> Офис, коридор, подсобное помещение</p>
+      <p class="catalog-rate">≈ 1 450 ₽/м²<span> · базовый монтаж</span></p>
+      <a class="catalog-action" href="?type=tile#ceiling-calculator" data-estimate-type="tile" aria-label="Рассчитать потолок: Кассетный с минеральными плитами">Рассчитать</a>
+    </div>
+  </article>
+  </div>
+</section><style>
+#remont-preview .calculator{background:#eadbcb;scroll-margin-top:20px}
+#remont-preview .calculator-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:start}
+#remont-preview .calculator form{max-width:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#remont-preview .calculator .wide{grid-column:1/-1}
+#remont-preview .estimate{background:#fffaf2;border-radius:6px 6px 24px 6px;padding:22px}
+#remont-preview .estimate strong{display:block;font-size:clamp(29px,5vw,48px);line-height:1.12;letter-spacing:-.04em}
+#remont-preview .estimate dl{margin:16px 0}
+#remont-preview .estimate dl div{display:flex;justify-content:space-between;gap:14px;border-top:1px solid #e0cdbb;padding:7px 0}
+#remont-preview .estimate dd{margin:0;text-align:right;white-space:nowrap}
+#remont-preview .calculator .check{display:flex;align-items:center;gap:10px}
+#remont-preview .calculator .check input{width:18px;height:18px;accent-color:#883e2e}
+@media(max-width:720px){#remont-preview .calculator-grid{grid-template-columns:1fr}}
+@media(max-width:390px){#remont-preview .calculator form{grid-template-columns:1fr}}
+</style>
+<section id="ceiling-calculator" class="calculator">
+  <h2 tabindex="-1">Калькулятор потолка</h2>
+  <p>Введите размеры комнаты и выберите комплектацию. Расценки примерные.</p>
+  <div class="calculator-grid">
+    <form aria-label="Параметры потолка">
+      <label class="wide">Тип потолка<select name="ceiling">
+        <option value="matte" data-rate="850" data-category="stretch" data-line="Полотно и монтаж">Матовый натяжной</option>
+        <option value="satin" data-rate="1000" data-category="stretch" data-line="Полотно и монтаж">Сатиновый натяжной</option>
+        <option value="fabric" data-rate="1900" data-category="stretch" data-line="Полотно и монтаж">Тканевый натяжной</option>
+        <option value="drywall" data-rate="2200" data-category="suspended" data-line="Гипсокартон и монтаж">Подвесной из гипсокартона</option>
+        <option value="slat" data-rate="1550" data-category="suspended" data-line="Рейки и монтаж">Реечный алюминиевый</option>
+        <option value="tile" data-rate="1450" data-category="suspended" data-line="Плиты и монтаж">Кассетный с минеральными плитами</option>
+      </select></label>
+      <label>Длина комнаты, м<input name="length" type="number" min="0.1" max="100" step="0.1" value="4" required inputmode="decimal"></label>
+      <label>Ширина комнаты, м<input name="width" type="number" min="0.1" max="100" step="0.1" value="3" required inputmode="decimal"></label>
+      <label>Углы, шт.<input name="corners" type="number" min="4" max="100" step="1" value="4" required inputmode="numeric"></label>
+      <label>Точечные светильники, шт.<input name="spots" type="number" min="0" max="100" step="1" value="4" required inputmode="numeric"></label>
+      <label>Световая линия, м<input name="light" type="number" min="0" max="100" step="0.1" value="0" required inputmode="decimal"></label>
+      <label>Скрытый карниз, м<input name="curtain" type="number" min="0" max="100" step="0.1" value="0" required inputmode="decimal"></label>
+      <label class="wide check"><input name="removal" type="checkbox"> Демонтировать старый потолок</label>
+    </form>
+    <div class="estimate">
+      <div aria-live="polite" data-ceiling-summary></div>
+      <dl data-ceiling-lines></dl>
+      <p>Расчёт для одного помещения. Сложный контур, подготовку, оборудование и условия монтажа уточняют на замере.</p>
+      <a class="primary" href="./contact.html?service=%D0%9F%D0%BE%D1%82%D0%BE%D0%BB%D0%BA%D0%B8">Обсудить потолок</a>
+    </div>
+  </div>
+</section>
+<script>
+(() => {
+  const section = document.getElementById('ceiling-calculator');
+  const form = section.querySelector('form');
+  const summary = section.querySelector('[data-ceiling-summary]');
+  const breakdown = section.querySelector('[data-ceiling-lines]');
+  const money = new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'RUB', maximumFractionDigits: 0 });
+  const quantity = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 2 });
+
+  function render() {
+    const fields = form.elements;
+    breakdown.replaceChildren();
+    if (Array.from(fields).some(field => !field.validity.valid)) {
+      summary.textContent = 'Проверьте размеры и количество элементов.';
+      return;
+    }
+    const length = fields.namedItem('length').valueAsNumber;
+    const width = fields.namedItem('width').valueAsNumber;
+    const area = length * width;
+    const perimeter = 2 * (length + width);
+    const ceiling = fields.ceiling.selectedOptions[0].dataset;
+    const isSuspended = ceiling.category === 'suspended';
+    const lines = [
+      [ceiling.line, area * Number(ceiling.rate)],
+      [isSuspended ? 'Периметральный профиль' : 'Профиль по периметру', perimeter * (isSuspended ? 420 : 280)],
+      ['Углы сверх четырёх', (fields.corners.valueAsNumber - 4) * 300],
+      ['Монтаж светильников', fields.spots.valueAsNumber * 550],
+      ['Световая линия', fields.light.valueAsNumber * 2400],
+      ['Скрытый карниз', fields.curtain.valueAsNumber * 1800],
+      ['Демонтаж', fields.removal.checked ? area * 350 : 0],
+    ].filter(([, cost]) => cost > 0);
+    const total = lines.reduce((sum, [, cost]) => sum + cost, 0);
+    const totalLabel = document.createElement('strong');
+    totalLabel.textContent = '≈ ' + money.format(total);
+    summary.replaceChildren(totalLabel, document.createTextNode(
+      quantity.format(area) + ' м² · ≈ ' + money.format(total / area) + ' за м²'
+    ));
+    for (const [label, cost] of lines) {
+      const row = document.createElement('div');
+      const name = document.createElement('dt');
+      const amount = document.createElement('dd');
+      name.textContent = label;
+      amount.textContent = money.format(cost);
+      row.append(name, amount);
+      breakdown.append(row);
+    }
+  }
+
+  form.addEventListener('submit', event => event.preventDefault());
+  form.addEventListener('input', render);
+  const requestedType = new URLSearchParams(location.search).get('type');
+  if (Array.from(form.elements.ceiling.options).some(option => option.value === requestedType)) {
+    form.elements.ceiling.value = requestedType;
+  }
+  render();
+})();
+</script>
+</main><footer><a href="./">Локальный ремонт и отделка</a><a href="./contact.html">Обсудить задачу</a></footer></div></body></html>

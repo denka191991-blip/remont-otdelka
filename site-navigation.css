@@ -1,0 +1,69 @@
+html {
+  scroll-padding-block-start: 78px;
+}
+
+#remont-preview {
+  overflow: clip;
+}
+
+#remont-preview .site-header {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 10;
+  flex-wrap: nowrap;
+  gap: 6px 20px;
+  padding-block: 8px;
+  background: #faf4e9;
+  border-bottom: 1px solid #dfcdbb;
+  box-shadow: 0 4px 14px #3128210d;
+}
+
+#remont-preview .site-header nav {
+  gap: 3px clamp(4px, 1.2vw, 16px);
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+#remont-preview .site-header a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-underline-offset: 4px;
+}
+
+#remont-preview .site-header nav a {
+  padding-inline: 9px;
+  color: #635b55;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+#remont-preview .site-header nav a:hover,
+#remont-preview .site-header nav a:focus-visible {
+  text-decoration: underline;
+}
+
+#remont-preview .site-header nav a[aria-current] {
+  background: #f0ded0;
+  color: #733222;
+}
+
+#remont-preview :is(a, button, input, select, textarea, summary):focus-visible {
+  outline: 2px solid #883e2e;
+  outline-offset: 3px;
+}
+
+@media (max-width: 850px) {
+  html { scroll-padding-block-start: 110px; }
+  #remont-preview .site-header { display: grid; justify-content: stretch; gap: 0; }
+  #remont-preview .site-header nav { justify-content: flex-start; }
+  #remont-preview .site-header .brand { justify-self: start; }
+}
+
+@media (max-width: 540px) {
+  html { scroll-padding-block-start: 155px; }
+  #remont-preview .site-header nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  #remont-preview .site-header nav a { justify-content: center; }
+}
